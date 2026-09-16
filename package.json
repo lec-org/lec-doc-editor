@@ -14,7 +14,9 @@
     "src",
     "LICENSE",
     "README.md",
-    "PROVENANCE.md"
+    "PROVENANCE.md",
+    "scripts/community-guard.mjs",
+    "fixtures"
   ],
   "main": "./dist/index.js",
   "module": "./src/index.ts",
@@ -25,7 +27,9 @@
   "packageManager": "pnpm@11.25.0",
   "scripts": {
     "build": "tsc --build",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "check:community": "node scripts/community-guard.mjs",
+    "test": "node --test scripts/__test__/*.test.mjs"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0 || ^19.0.0",

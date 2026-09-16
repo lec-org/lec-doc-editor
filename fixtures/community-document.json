@@ -1,0 +1,103 @@
+{
+  "html": "<h2 data-id=\"heading-1\">乐程协作文档</h2><p data-id=\"paragraph-1\">中文、emoji 🌟 与 <strong>加粗</strong>。</p><ul><li><p data-id=\"paragraph-2\">列表项</p></li></ul><p data-id=\"paragraph-3\"></p>",
+  "markdown": "## 乐程协作文档\n\n中文、emoji 🌟 与 **加粗**。\n\n- 列表项\n",
+  "texts": [
+    "乐程协作文档",
+    "中文、emoji 🌟 与",
+    "加粗",
+    "列表项"
+  ],
+  "json": {
+    "type": "doc",
+    "attrs": {
+      "dir": "auto"
+    },
+    "content": [
+      {
+        "type": "heading",
+        "attrs": {
+          "id": "heading-1",
+          "indent": 0,
+          "dir": "auto",
+          "textAlign": null,
+          "level": 2
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "乐程协作文档"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "attrs": {
+          "id": "paragraph-1",
+          "indent": 0,
+          "dir": "auto",
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "中文、emoji 🌟 与 "
+          },
+          {
+            "type": "text",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ],
+            "text": "加粗"
+          },
+          {
+            "type": "text",
+            "text": "。"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "attrs": {
+          "dir": "auto"
+        },
+        "content": [
+          {
+            "type": "listItem",
+            "attrs": {
+              "dir": "auto"
+            },
+            "content": [
+              {
+                "type": "paragraph",
+                "attrs": {
+                  "id": "paragraph-2",
+                  "indent": 0,
+                  "dir": "auto",
+                  "textAlign": null
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "列表项"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "attrs": {
+          "id": "paragraph-3",
+          "indent": 0,
+          "dir": "auto",
+          "textAlign": null
+        }
+      }
+    ]
+  },
+  "ydoc": "AR/ogeiSCwAHAQdkZWZhdWx0AwdoZWFkaW5nBwDogeiSCwAGBADogeiSCwES5LmQ56iL5Y2P5L2c5paH5qGjKADogeiSCwACaWQBdwloZWFkaW5nLTEoAOiB6JILAAZpbmRlbnQBfQAoAOiB6JILAANkaXIBdwRhdXRvKADogeiSCwAFbGV2ZWwBfQKH6IHokgsAAwlwYXJhZ3JhcGgHAOiB6JILDAYEAOiB6JILDRjkuK3mlofjgIFlbW9qaSDwn4yfIOS4jiCG6IHokgsbBGJvbGQCe32E6IHokgscBuWKoOeyl4bogeiSCx4EYm9sZARudWxshOiB6JILHwPjgIIoAOiB6JILDAJpZAF3C3BhcmFncmFwaC0xKADogeiSCwwGaW5kZW50AX0AKADogeiSCwwDZGlyAXcEYXV0b4fogeiSCwwDCmJ1bGxldExpc3QHAOiB6JILJAMIbGlzdEl0ZW0HAOiB6JILJQMJcGFyYWdyYXBoBwDogeiSCyYGBADogeiSCycJ5YiX6KGo6aG5KADogeiSCyYCaWQBdwtwYXJhZ3JhcGgtMigA6IHokgsmBmluZGVudAF9ACgA6IHokgsmA2RpcgF3BGF1dG8oAOiB6JILJQNkaXIBdwRhdXRvKADogeiSCyQDZGlyAXcEYXV0b4fogeiSCyQDCXBhcmFncmFwaCgA6IHokgswAmlkAXcLcGFyYWdyYXBoLTMoAOiB6JILMAZpbmRlbnQBfQAoAOiB6JILMANkaXIBdwRhdXRvAA=="
+}
