@@ -1,0 +1,70 @@
+{
+  "name": "@lec/doc-editor",
+  "version": "0.96.0",
+  "description": "Shared Tiptap editor extensions derived from Docmost",
+  "license": "AGPL-3.0-only",
+  "homepage": "https://github.com/lec-org/lec-doc-editor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lec-org/lec-doc-editor.git"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "src",
+    "LICENSE",
+    "README.md",
+    "PROVENANCE.md"
+  ],
+  "main": "./dist/index.js",
+  "module": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "build": "tsc --build",
+    "dev": "tsc --watch"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "dependencies": {
+    "@braintree/sanitize-url": "7.1.2",
+    "@floating-ui/dom": "1.7.3",
+    "@joplin/turndown": "4.0.82",
+    "@joplin/turndown-plugin-gfm": "1.0.64",
+    "@tiptap/core": "3.31.3",
+    "@tiptap/extension-code-block": "3.31.3",
+    "@tiptap/extension-heading": "3.31.3",
+    "@tiptap/extension-highlight": "3.31.3",
+    "@tiptap/extension-image": "3.31.3",
+    "@tiptap/extension-link": "3.31.3",
+    "@tiptap/extension-list-item": "3.31.3",
+    "@tiptap/extension-ordered-list": "3.31.3",
+    "@tiptap/extension-table": "3.31.3",
+    "@tiptap/extension-unique-id": "3.31.3",
+    "@tiptap/pm": "3.31.3",
+    "@tiptap/react": "3.31.3",
+    "@tiptap/suggestion": "3.31.3",
+    "diff": "8.0.3",
+    "docx": "9.7.1",
+    "highlight.js": "11.11.1",
+    "image-dimensions": "2.5.0",
+    "marked": "17.0.5",
+    "nanoid": "3.3.18",
+    "prosemirror-model": "1.25.11",
+    "rfc6902": "5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.1",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "@types/turndown": "5.0.6",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "typescript": "5.9.3"
+  }
+}

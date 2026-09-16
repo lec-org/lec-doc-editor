@@ -1,0 +1,27 @@
+name: Community guard
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: corepack enable && corepack prepare pnpm@11.25.0 --activate
+      - name: Reject proprietary and product-brand artifacts
+        shell: bash
+        run: |
+          test ! -f .gitmodules
+          test ! -e packages/ee
+          test ! -e packages/base-formula
+          ! grep -R -E '(@/ee|@docmost/ee|Powered by Docmost|docmost-logo|docmost-favicon)' --exclude-dir=.git --exclude-dir=node_modules --exclude=PROVENANCE.md --exclude=pnpm-lock.yaml .
+          test -s LICENSE
+          test -s PROVENANCE.md
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
